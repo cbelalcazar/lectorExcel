@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Js XLSX</title>
+</head>
+<body ng-app="MyApp">
+
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/js-xlsx/dist/xlsx.core.min.js"></script>  
+  <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+  <script type="text/javascript" src="angular-js-xlsx.js"></script>
+  <div ng-controller="myController">
+    <js-xls onread="read" onerror="error"></js-xls>
+  </div>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Orden</th>
+        <th>UN</th>
+        <th>CO</th>
+        <th>AREA</th>
+        <th>CC</th>
+        <th>COD</th>
+        <th>CONCEPTO</th>
+        <th>ENE</th>
+        <th>FEB</th>
+        <th>MAR</th>
+        <th>ABR</th>
+        <th>MAY</th>
+        <th>JUN</th>
+        <th>JUL</th>
+        <th>AGO</th>
+        <th>SEP</th>
+        <th>OCT</th>
+        <th>NOV</th>
+        <th>DIC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="(key, obj) in data">
+        <td>{{key + 1}}</td>
+        <td>{{data.UN}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+        <td>{{data.}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <script type="text/javascript" src="ctrl.js"></script>
+</body>
+</html>
